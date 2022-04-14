@@ -9,12 +9,40 @@ The secret sauce is to dereference the object passed to map with an array `map (
 :::caution escape the $ with a \ in a shell script HEREDOC
 :::
 
-``` jq
+```jq
       (.[0] | keys_unsorted) as $keys
-      | 
-        $keys, 
+      |
+        $keys,
         # object dereferencing in jq accepts an array
         # eg  obj | jq .["key1", "key2
-        map( [ .[ $keys[] ] ] )[]  
+        map( [ .[ $keys[] ] ] )[]
       | @csv
+```
+
+## Modules
+
+```jq
+  local jqQuery=$(cat <<-EOF
+                      include "pad";
+                      .[] |
+                      "\(.key | rpad(8;" "))
+EOF
+)
+
+  jq --raw-output -L "~/.config/jq" $jqQuery <<< $json
+```
+
+## Inline Functions
+
+```jq
+    local jqQuery=$(cat <<-EOF
+                               def rpad(\$len; \$fill): tostring | (\$len - length) as \$l | . + (\$fill * \$l)[:\$l];
+                               def lpad(\$len; \$fill): tostring | (\$len - length) as \$l | (\$fill * \$l)[:\$l] + .;
+                               include "pad"
+                               .keymaps |
+                               map( "\(.bindkey) \(.dir)")
+                               | .[]
+EOF
+)
+  jq $jqQuery <<< $json
 ```
