@@ -46,3 +46,13 @@ EOF
 )
   jq $jqQuery <<< $json
 ```
+
+## string interpolation
+
+```jq
+    local jqQuery=$(cat <<-EOF
+                               include "pad";
+                               .keymaps |
+                               map( "\(.bindkey) \(.dir)")
+EOF
+```
