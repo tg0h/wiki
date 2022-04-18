@@ -17,3 +17,8 @@
 
 bat --style=numbers --color always $configFile | fzf --preview 'bat --style=numbers --color=always '"$configFile"' --highlight-line {1}' --preview-window ~8,+{1}-5
 ```
+
+## actions
+
+- change multiple actions with +
+  - edit file, then abort to exit fzf

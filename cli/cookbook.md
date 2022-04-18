@@ -15,6 +15,8 @@ gsed -E "s/#.*/"$'\e[36m'"&"$'\e[m'"/"
 
 ```
 
+- TODO: combine with jq colour module
+
 # Colour
 
 ```bash
@@ -23,4 +25,18 @@ specify the RGB 256bit triple with the escape sequence below
 the triple below is 82,96,255
 
 echo "\x1b[38;2;82;96;255m colourful text"
+```
+
+# get directory from filepath
+
+```bash
+# /dir/to/file becomes /dir/to
+[[ -f $target ]] && target=${target%/*} # zsh variable expansion - min match pattern /* and remove from tail
+```
+
+# tail
+
+```bash
+tail -n +2 # print everything but the first line
+tail -n +3 # print everything but the first 2 lines
 ```
