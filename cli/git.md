@@ -1,5 +1,12 @@
 # git
 
+## moving around
+
+```bash
+# move main branch backwards by 3 commits
+git branch -f main HEAD~3
+```
+
 ## rebase
 
 ```bash
