@@ -1,5 +1,9 @@
 # git
 
+## tactics
+
+- using git commits just for console.log statements and then quickly dropping them
+
 ## moving around
 
 ```bash
