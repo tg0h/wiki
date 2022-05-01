@@ -27,3 +27,17 @@ git rebase <base ref> <another ref>
 # if main is behind feat1 to 'fast forward main'
 git rebase feat1 main
 ```
+
+## git push
+
+colon refspec
+
+```bash
+# source can be foo~1
+# destation does not need to exist in origin, git will create destination
+# git push origin main:newBranch
+git push origin <source>:<destination>
+git push <remote> <place>
+git push
+
+```
