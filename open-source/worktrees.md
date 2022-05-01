@@ -34,3 +34,16 @@ git rev-parse --is-bare-repository
 
 - first check if inside worktree
 - then find the git directory with git rev parse absolute git dir
+
+## telescope extension
+
+- create a telescope picker and call find
+  - take in the opts that telescope passes in
+  - in the picker, configure
+    - prepare results
+    - finder
+    - sorter
+    - attach mappings
+      - define what selection does
+      - define other mappings in i, n mode
+- return require("telescope").register_extension
