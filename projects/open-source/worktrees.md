@@ -1,6 +1,14 @@
 # worktrees
 
 - https://levelup.gitconnected.com/git-worktrees-the-best-git-feature-youve-never-heard-of-9cd21df67baf
+- rabbit hole
+  - vim/plenary strdisplaywidth - unicode, tabs zz
+
+```bash
+# get status from outside a worktree
+# note that this is also affected by the GIT_DIR and GIT_WORKTREE env vars
+git --git-dir /Users/tim/src/playground/git/worktrees/bare/.bare/worktrees/feat1 --work-tree ./feat1 status
+```
 
 ```bash
 md worktree
