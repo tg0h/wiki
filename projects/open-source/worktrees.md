@@ -55,3 +55,16 @@ git rev-parse --is-bare-repository
       - define what selection does
       - define other mappings in i, n mode
 - return require("telescope").register_extension
+
+- results
+
+```lua
+results = {
+  {
+  branch: '[feat1]',
+  path: '/Users/.../path/to/feat1',
+  sha: 'abcd'
+  },
+  ...
+}
+```

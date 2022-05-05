@@ -56,3 +56,7 @@ EOF
                                map( "\(.bindkey) \(.dir)")
 EOF
 ```
+
+## links
+
+- https://ubuntu.com/blog/improving-cli-output-with-jq

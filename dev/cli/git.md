@@ -41,3 +41,10 @@ git push <remote> <place>
 git push
 
 ```
+
+## git diff
+
+```bash
+# search for strings that begin with capital letter and word boundary
+git log --name-status main.. | grep -E '^[A-Z]\b'
+```
