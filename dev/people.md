@@ -1,3 +1,4 @@
 # people
 
-- https://liw.fi/
+- <https://liw.fi/>
+  - gtd for hackers, how to organize
