@@ -10,6 +10,12 @@
   - https://sw.kovidgoyal.net/kitty/keyboard-protocol/
   - https://erwin.co/getting-ctrltab-to-work-in-neovim/
 
+## tip
+
+in vim, use ga to display ansi code of text under cursor
+
+- https://vim.fandom.com/wiki/Showing_the_ASCII_value_of_the_current_character
+
 ## problems
 
 - terminals ignore shift key when ctrl key is pressed
