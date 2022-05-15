@@ -6,9 +6,19 @@
   - hyper r, hyper /
 
 - vim
+
   - https://github.com/drmikehenry/vim-fixkey/blob/main/doc/fixkey.txt
   - https://sw.kovidgoyal.net/kitty/keyboard-protocol/
   - https://erwin.co/getting-ctrltab-to-work-in-neovim/
+
+- vim help
+
+  - tui-input
+  - key-codes
+
+- debugging
+  - C-V in vim
+  - in cli, type cat, then press keys
 
 ## tip
 
