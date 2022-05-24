@@ -1,4 +1,4 @@
-# terminal
+# iterm2
 
 ## set up iterm2
 
