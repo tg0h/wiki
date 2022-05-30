@@ -1,5 +1,6 @@
 # git
 
+I just found out this cool thing about git.
 ## tactics
 
 - using git commits just for console.log statements and then quickly dropping them
