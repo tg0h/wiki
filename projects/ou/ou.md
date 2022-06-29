@@ -1,9 +1,11 @@
-# time tracking
+# Project ou
 
-time tracking version 1 - 
+time tracking version 1 -
+
 - unable to summarize information across workspaces
 
 version 2
+
 - provide grouping at different levels
   - client
   - workspace
@@ -19,4 +21,41 @@ version 2
 - filtering
   - easy time filters
 
+## Competition
 
+- timewarrior, taskwarrior
+- doing
+- watson
+- toggl
+
+## Structure
+
+- workspace
+  - project
+  - task
+  - subtask
+  - detail
+
+Examples:
+
+## Configuration
+
+- colours per project
+
+## Modules
+
+- Entry
+  - fzf
+- Reporting
+  - summary
+  - week
+  - month
+  - chain report
+  - timline
+
+## Features
+
+- config folder hierarchy
+- archive/rotate
+- filters
+- status bar
