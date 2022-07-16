@@ -22,3 +22,44 @@ bat --style=numbers --color always $configFile | fzf --preview 'bat --style=numb
 
 - change multiple actions with +
   - edit file, then abort to exit fzf
+
+## presentation
+
+1. demo
+2. search file dir history
+
+- apply filters
+- preview - file vs dir
+
+3. text search
+4. app integration - get something and pass to app
+
+- cw
+- pass otp
+
+5. search command output
+
+- git
+- candy cognito list users
+- gr function
+
+6. apply commands to entries
+
+- go to dir, delete, edit file, copy text
+
+7. search text file content
+
+- search package.json
+
+8. function, alias
+9. dir switcher
+
+- config
+  - nvim config
+- aliases
+  - global alias for fzf
+- tmp folder
+- downloads folder
+- eg notes
+
+how long did this take?

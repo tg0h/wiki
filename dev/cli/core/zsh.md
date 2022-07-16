@@ -66,3 +66,12 @@ autoload with the -X flag tells zsh to call your function after loading it. Howe
 from `man zshmisc` see section AUTOLOADING FUNCTIONS
 if KSH_AUTOLOAD is set or the file contains only a simple definition of the function, the file's contents will be executed
 setting the opt KSH_AUTOLOAD will run both the initialization code and the function
+
+### param
+
+```bash
+# Delete the last slash and everything before
+var="/home/user"
+ls "${var##*/}"
+ls user
+```

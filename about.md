@@ -7,6 +7,10 @@ slug: /
 
 I like vim. I like to make things tidy. I like to write code.
 
+- time tracking
+- note taking
+- visualizing data (esp with colours)
+
 ## links
 
 - [how to be a hacker](../blog/hacking)

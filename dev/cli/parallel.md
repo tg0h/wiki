@@ -5,7 +5,8 @@
 zargs
 
 ```zsh
-run a zsh function
+# run a zsh function
+# autoload zargs
 -P with 10 cores
 
 -t with verbose output
